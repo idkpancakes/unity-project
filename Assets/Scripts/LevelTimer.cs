@@ -18,7 +18,7 @@ public class LevelTimer : MonoBehaviour
     {
         global = FindObjectOfType<GlobalScript>(); 
 
-        endLevelTime = 20.0f; 
+        // endLevelTime = 20.0f; 
     }
 
     // Update is called once per frame

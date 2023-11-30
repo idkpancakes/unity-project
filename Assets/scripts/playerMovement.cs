@@ -187,7 +187,4 @@ public class PlayerMovement : MonoBehaviour
 
         return false;
     }
-
-    private void FireShotgun
-    
 }

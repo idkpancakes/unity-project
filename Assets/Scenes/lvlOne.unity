@@ -4220,7 +4220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4917f22680afe054294269f61cc90f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endLevelTime: 0
+  endLevelTime: 600
   timerT: {fileID: 448344939}
 --- !u!114 &1093227732
 MonoBehaviour:
@@ -6630,13 +6630,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1640666368}
   - component: {fileID: 1640666369}
+  - component: {fileID: 1640666370}
   m_Layer: 0
   m_Name: shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1640666368
 Transform:
   m_ObjectHideFlags: 0
@@ -6704,6 +6705,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1640666370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640666367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ce878b2a16ff744a692226211f152a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireDelta: 0.5
 --- !u!1001 &1734700580
 PrefabInstance:
   m_ObjectHideFlags: 0
