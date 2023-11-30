@@ -45,10 +45,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            SceneManager.LoadScene("Transition");
-        }
+        //     if (Input.GetKeyDown("space"))
+        //     {
+        //         SceneManager.LoadScene("Transition");
+        //     }
 
 
         /*
@@ -84,20 +84,17 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        bool grounded = isGrounded();
-        // bool grounded = true;
+        bool grounded = IsGrounded();
         if (grounded)
             sinceJump += Time.deltaTime;
         else
-        {
             transform.rotation = Quaternion.identity;
-        }
 
         if (horizontal != 0)
         {
-            Vector2 fuckingBitches =
+            Vector2 targetPos =
                 new Vector2((horizontal * horizontalSpeed) * (grounded ? 1 : 0.40f), rb.velocity.y);
-            rb.velocity = Vector2.Lerp(rb.velocity, fuckingBitches, Time.fixedDeltaTime);
+            rb.velocity = Vector2.Lerp(rb.velocity, targetPos, Time.fixedDeltaTime);
             // Debug.Log(Time.fixedDeltaTime + " is moving");
 
 
@@ -154,12 +151,12 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(pickupCount);
     }
 
-    private bool isGrounded()
+    private bool IsGrounded()
     {
         // Setup our rays
         List<RaycastHit2D> rayList = new List<RaycastHit2D>();
 
-        
+
         //0.000001f
         rayList.Add(Physics2D.Raycast(transform.position, Vector2.down, 1f)); // center ray
         rayList.Add(Physics2D.Raycast(transform.position, Vector2.down + Vector2.left, 1f)); // left ray
@@ -172,10 +169,9 @@ public class PlayerMovement : MonoBehaviour
 
         foreach (RaycastHit2D ray in rayList)
         {
+            // if null check next ray
             if (ray.collider == null)
-                return false;
-            
-            
+                continue;
 
             var grounded = ray.collider.gameObject.CompareTag("Platform");
 
@@ -192,28 +188,6 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 
-    //given an object align the rotation to its normal vector
-    private void AlignObject(GameObject surface)
-    {
-    }
-
-/*
-    private void collectFish(Collision2D other) {
-
-       
-        if(other.gameObject.CompareTag("fish") == true){
-
-      
-            fishCount++; 
-            fishText.text = "Fish: " + fishCount;
-
-            fishFinal.fishCount = fishCount; 
-
-            Destroy(other.gameObject);
-             Debug.Log(fishFinal.fishCount);
-        
-        }
-    }
-
-    */
+    private void FireShotgun
+    
 }
