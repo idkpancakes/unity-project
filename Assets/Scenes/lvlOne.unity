@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 88425960}
   m_Layer: 0
   m_Name: bigCoin (2)
-  m_TagString: fish
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 317522487}
   m_Layer: 0
   m_Name: ground (2)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +494,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -576,21 +575,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efd00f30e3cf9d349884dba6a368adf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1574238375}
-  height: 2
-  depth: -10
 --- !u!1001 &540967857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,7 +770,7 @@ GameObject:
   - component: {fileID: 594852665}
   m_Layer: 0
   m_Name: ground (12)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1072,7 +1056,7 @@ GameObject:
   - component: {fileID: 732964224}
   m_Layer: 0
   m_Name: bigCoin (1)
-  m_TagString: fish
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1203,7 +1187,7 @@ GameObject:
   - component: {fileID: 735671882}
   m_Layer: 0
   m_Name: ground (9)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1361,7 +1345,7 @@ GameObject:
   - component: {fileID: 775149763}
   m_Layer: 0
   m_Name: ground (1)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1576,7 +1560,7 @@ GameObject:
   - component: {fileID: 883085386}
   m_Layer: 0
   m_Name: ground (4)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1848,7 +1832,7 @@ GameObject:
   - component: {fileID: 966192639}
   m_Layer: 0
   m_Name: ground (11)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2067,7 +2051,7 @@ GameObject:
   - component: {fileID: 998897719}
   m_Layer: 0
   m_Name: bigCoin
-  m_TagString: fish
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2266,7 +2250,7 @@ GameObject:
   - component: {fileID: 1032629470}
   m_Layer: 0
   m_Name: ground (6)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2728,7 +2712,7 @@ GameObject:
   - component: {fileID: 1328219740}
   m_Layer: 0
   m_Name: ground (8)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2886,7 +2870,7 @@ GameObject:
   - component: {fileID: 1361339786}
   m_Layer: 0
   m_Name: ground (7)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3253,7 +3237,7 @@ GameObject:
   - component: {fileID: 1538557819}
   m_Layer: 0
   m_Name: ground (15)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3411,7 +3395,7 @@ GameObject:
   - component: {fileID: 1556250840}
   m_Layer: 0
   m_Name: ground
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3668,7 +3652,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1574238377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3727,9 +3711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1574238376}
-  ground: {fileID: 1556250837}
   horizontalSpeed: 30
-  verticalSpeed: 1000
+  verticalSpeed: 10
   scoreText: {fileID: 1123651310}
   fishText: {fileID: 1231280551}
   friction: 0.5
@@ -3814,7 +3797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 563303070057874305, guid: 5c6a1db1e69e787409e2ea00aa04ba72, type: 3}
       propertyPath: m_TagString
-      value: fish
+      value: Fish
       objectReference: {fileID: 0}
     - target: {fileID: 6954233184273647884, guid: 5c6a1db1e69e787409e2ea00aa04ba72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3880,7 +3863,7 @@ GameObject:
   - component: {fileID: 1778092377}
   m_Layer: 0
   m_Name: ground (5)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4219,7 +4202,7 @@ GameObject:
   - component: {fileID: 2016960440}
   m_Layer: 0
   m_Name: ground (3)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4580,7 +4563,7 @@ GameObject:
   - component: {fileID: 2081894706}
   m_Layer: 0
   m_Name: ground (14)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4738,7 +4721,7 @@ GameObject:
   - component: {fileID: 2085477701}
   m_Layer: 0
   m_Name: ground (10)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4896,7 +4879,7 @@ GameObject:
   - component: {fileID: 2133081300}
   m_Layer: 0
   m_Name: ground (13)
-  m_TagString: 'icy '
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
