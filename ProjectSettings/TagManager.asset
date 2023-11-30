@@ -7,13 +7,13 @@ TagManager:
   - 'icy '
   - NotIcy
   - PickupItem
-  - fiiiiiiish
-  - fish
+  - Fish
+  - Platform
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 

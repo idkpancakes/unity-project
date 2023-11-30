@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pressMenuButtons : MonoBehaviour
+public class PressMenuButtons : MonoBehaviour
 {
 
     [SerializeField] private GameObject pauseMenu; 
