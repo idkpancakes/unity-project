@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PressMenuButtons : MonoBehaviour
 {
 
-    
+    [SerializeField] private GameObject pauseMenu; 
+    [SerializeField] private GameObject pauseButton; 
     public GlobalScript lvlCount; 
     // Start is called before the first frame update
     void Start()
     {
         lvlCount = FindObjectOfType<GlobalScript>(); 
+        pauseMenu.SetActive(false); 
     }
 
     // Update is called once per frame
@@ -40,5 +43,17 @@ public class PressMenuButtons : MonoBehaviour
 
     public void pressQuit() {
       Application.Quit();
+    }
+
+    public void pressPause() {
+        Time.timeScale = 0f; 
+        pauseMenu.SetActive(true); 
+        pauseButton.SetActive(false); 
+    }
+
+    public void pressContinue() {
+        Time.timeScale = 1.0f; 
+        pauseMenu.SetActive(false); 
+        pauseButton.SetActive(true); 
     }
 }

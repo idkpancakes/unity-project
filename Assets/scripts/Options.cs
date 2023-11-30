@@ -19,6 +19,8 @@ public class Options : MonoBehaviour
 
     public List<ResItem> resolutions = new List<ResItem>(); 
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,7 @@ public class Options : MonoBehaviour
     {
         
     }
+
 
      public void SetLevel (float sliderValue)
     {
