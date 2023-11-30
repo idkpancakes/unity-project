@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TextMeshProUGUI fishText;
 
     private Camera cam;
+    private Animator _animator;
+
 
     private int pickupCount = 0;
     private int fishCount = 0;
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _animator = GetComponent<Animator>();
         globalScript = FindAnyObjectByType<GlobalScript>();
 
         cam = Camera.main;
@@ -81,10 +84,14 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        // bool grounded = isGrounded();
-        bool grounded = true;
+        bool grounded = isGrounded();
+        // bool grounded = true;
         if (grounded)
             sinceJump += Time.deltaTime;
+        else
+        {
+            transform.rotation = Quaternion.identity;
+        }
 
         if (horizontal != 0)
         {
@@ -115,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Please Jump!");
         }
 
-        // _animation.SetBool("Walking", horizontal != 0 && grounded);
+        _animator.SetBool("Walking", horizontal != 0 && grounded);
     }
 
 
@@ -149,12 +156,45 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D ray = Physics2D.Raycast(rb.position, Vector2.down, 0.000001f);
+        // Setup our rays
+        List<RaycastHit2D> rayList = new List<RaycastHit2D>();
 
-        if (ray.collider == null)
-            return false;
+        
+        //0.000001f
+        rayList.Add(Physics2D.Raycast(transform.position, Vector2.down, 1f)); // center ray
+        rayList.Add(Physics2D.Raycast(transform.position, Vector2.down + Vector2.left, 1f)); // left ray
+        rayList.Add(Physics2D.Raycast(transform.position, Vector2.down + Vector2.right, 1f)); // right ray
 
-        return ray.collider.gameObject.CompareTag("Platform");
+        Debug.DrawRay(transform.position, Vector2.down, Color.green);
+        Debug.DrawRay(transform.position, Vector2.down + Vector2.left, Color.red);
+        Debug.DrawRay(transform.position, Vector2.down + Vector2.right, Color.blue);
+
+
+        foreach (RaycastHit2D ray in rayList)
+        {
+            if (ray.collider == null)
+                return false;
+            
+            
+
+            var grounded = ray.collider.gameObject.CompareTag("Platform");
+
+            if (grounded)
+            {
+                // Debug.DrawLine(ray.point, ray.point + ray.normal, Color.green);
+                transform.rotation = Quaternion.FromToRotation(transform.up, ray.normal) * transform.rotation;
+                Debug.DrawLine(transform.position, ray.point, Color.green);
+            }
+
+            return ray.collider.gameObject.CompareTag("Platform");
+        }
+
+        return false;
+    }
+
+    //given an object align the rotation to its normal vector
+    private void AlignObject(GameObject surface)
+    {
     }
 
 /*
