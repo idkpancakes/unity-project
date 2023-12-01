@@ -71,27 +71,18 @@ public class PressButton : MonoBehaviour
              globalScript.fishCount = 0; 
              
 
-       if(levelCount == 1 ){
-       
-        SceneManager.LoadScene("LevelTwo"); 
+       if(levelCount == 1 )
+       { SceneManager.LoadScene("LevelTwo"); 
        
       
        } else if (levelCount == 2) {
-        
-      
-        SceneManager.LoadScene("LevelThree");
+           SceneManager.LoadScene("LevelThree");
 
        } else if(levelCount == 3) {
-       
-         SceneManager.LoadScene("LevelFour"); 
-
+           // globalScript.lvlCounter++;
+           SceneManager.LoadScene("LevelFour");
        } else if (levelCount == 4) {
-
-        SceneManager.LoadScene("Win"); 
+           SceneManager.LoadScene("Win"); 
        }
-
-
-
-
     }
 }

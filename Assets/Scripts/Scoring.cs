@@ -16,8 +16,7 @@ public class Scoring : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        global = FindAnyObjectByType<GlobalScript>(); 
-       
+        global = FindAnyObjectByType<GlobalScript>();
 
         pebbleSoreText.text =  global.totalPebbles + ""; 
         fishScoreText.text =  global.totalFish + ""; 
