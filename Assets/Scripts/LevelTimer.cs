@@ -28,7 +28,6 @@ public class LevelTimer : MonoBehaviour
     {
         endLevelTime -= Time.deltaTime;
 
-        Debug.Log(endLevelTime); 
 
         timerT.text = "Time: " + Mathf.Round(endLevelTime * 100.0f) * 0.01f;
 
