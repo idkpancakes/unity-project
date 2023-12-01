@@ -141,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
             fishText.text = "Fish: " + fishCount;
 
             globalScript.fishCount = fishCount;
-            globalScript.totalFish = fishCount;
+            globalScript.totalFish++;
 
             Destroy(other.gameObject);
             Debug.Log(fishCount);
