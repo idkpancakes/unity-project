@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private float JUMP_DELAY = 0.10f;
     private float sinceJump = 0f;
 
-    private Vector2 CameraOffsetVector2 = new Vector2(5.0f, 2.5f);
+    private Vector2 CameraOffsetVector2 = new Vector2(3.5f, 2.5f);
 
     // Start is called before the first frame update
     void Start()
@@ -129,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
             pickupCount++;
             globalScript.totalPebbles++;
 
-            globalScript.levelPebbles = pickupCount; 
+            globalScript.levelPebbles = pickupCount;
             scoreText.text = "Score: " + pickupCount;
             Destroy(other.gameObject);
             return;
