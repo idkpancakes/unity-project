@@ -1417,6 +1417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelTime: 600
+  time: 0
   timerT: {fileID: 1755645470}
 --- !u!4 &168264255
 Transform:
@@ -1683,8 +1684,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 168264252}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressPause
         m_Mode: 1
         m_Arguments:
@@ -5467,8 +5468,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 168264252}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressContinue
         m_Mode: 1
         m_Arguments:
@@ -5600,8 +5601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 168264252}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressReturn
         m_Mode: 1
         m_Arguments:
