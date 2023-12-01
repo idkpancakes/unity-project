@@ -17,10 +17,14 @@ public class Scoring : MonoBehaviour
     void Start()
     {
         global = FindAnyObjectByType<GlobalScript>(); 
+       
 
         pebbleSoreText.text =  global.totalPebbles + ""; 
         fishScoreText.text =  global.totalFish + ""; 
-        levelCounterText.text = "You reached level " + (global.lvlCounter + 1); 
+
+        var displayLevel = global.lvlCounter + 1;
+
+        levelCounterText.text = "You reached level " + displayLevel; 
 
     }
 

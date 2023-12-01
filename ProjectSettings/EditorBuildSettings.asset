@@ -15,18 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Rules.unity
     guid: 69fe4bbdd74bee04b80da5734e3468de
   - enabled: 1
-    path: Assets/Scenes/LevelThree.unity
-    guid: 173e3f58d08ace3439d82ca013742b8a
-  - enabled: 1
     path: Assets/Scenes/Transition.unity
     guid: c6c028b101eb5e148bd3167b8ab550d0
-  - enabled: 1
-    path: Assets/Scenes/lvlOne.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/YouDied.unity
     guid: 1fb9acffdcd7a7e48a27b877583dc707
   - enabled: 1
+    path: Assets/Scenes/lvlOne.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LevelThree.unity
+    guid: 173e3f58d08ace3439d82ca013742b8a
+  - enabled: 1
     path: Assets/Scenes/LevelTwo.unity
     guid: edf178f45063710499609ab20fa6ed48
+  - enabled: 1
+    path: Assets/Scenes/LevelFour.unity
+    guid: 2685d7d41ad15cf44bfab71b63df0e9f
   m_configObjects: {}

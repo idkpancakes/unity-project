@@ -28,6 +28,8 @@ public class ScoreMenu : MonoBehaviour
     {
         global = FindAnyObjectByType<GlobalScript>();
 
+         global.lvlCounter++; 
+
         fishOne.SetActive(false); 
         fishTwo.SetActive(false); 
         fishThree.SetActive(false); 
