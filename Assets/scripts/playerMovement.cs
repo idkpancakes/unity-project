@@ -45,11 +45,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //     if (Input.GetKeyDown("space"))
-        //     {
-        //         SceneManager.LoadScene("Transition");
-        //     }
-
+        if (Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("Transition");
+        }
 
         /*
          * Please reformat and simplify! 
