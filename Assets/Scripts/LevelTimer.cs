@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelTimer : MonoBehaviour
 {
-
-    private GlobalScript global; 
+    private GlobalScript global;
 
     public float endLevelTime;
 
@@ -16,28 +15,28 @@ public class LevelTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        global = FindObjectOfType<GlobalScript>(); 
+        global = FindObjectOfType<GlobalScript>();
 
-        endLevelTime = 20.0f; 
+        // endLevelTime = 20.0f; 
     }
 
     // Update is called once per frame
     void Update()
     {
+        endLevelTime -= Time.deltaTime;
 
-        endLevelTime -= Time.deltaTime; 
+        timerT.text = "Time: " + Mathf.Round(endLevelTime * 100.0f) * 0.01f;
 
-        timerT.text = "Time: " + endLevelTime; 
-
-        if(endLevelTime <= 0.0f) {
-            timerEnd(); 
+        if (endLevelTime <= 0.0f)
+        {
+            timerEnd();
         }
-        
     }
 
 
-    public void timerEnd() {
-        SceneManager.LoadScene("YouDied"); 
-        DestroyImmediate(this); 
+    public void timerEnd()
+    {
+        SceneManager.LoadScene("YouDied");
+        DestroyImmediate(this);
     }
 }

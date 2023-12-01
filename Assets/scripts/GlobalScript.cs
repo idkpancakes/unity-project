@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
 
 public class GlobalScript : MonoBehaviour
 {
@@ -15,23 +15,17 @@ public class GlobalScript : MonoBehaviour
     public int totalPebbles = 0; 
     public int totalFish = 0; 
 
-
+    public int fishCount = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-         DontDestroyOnLoad(this); 
-       
-
+        DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
-
-     
-
 }
