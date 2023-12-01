@@ -676,7 +676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   pauseButton: {fileID: 0}
-  globalScript: {fileID: 0}
+  globalScript: {fileID: 428607898}
 --- !u!114 &428607898
 MonoBehaviour:
   m_ObjectHideFlags: 0
