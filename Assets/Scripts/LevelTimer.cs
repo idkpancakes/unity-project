@@ -9,6 +9,7 @@ public class LevelTimer : MonoBehaviour
     private GlobalScript global;
 
     public float endLevelTime;
+    private float startTime;
      public float time; 
 
     [SerializeField] TextMeshProUGUI timerT;
@@ -16,6 +17,7 @@ public class LevelTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        startTime = endLevelTime;
         global = FindObjectOfType<GlobalScript>();
 
         // endLevelTime = 20.0f; 
@@ -26,7 +28,7 @@ public class LevelTimer : MonoBehaviour
     {
         endLevelTime -= Time.deltaTime;
 
-        
+        Debug.Log(endLevelTime); 
 
         timerT.text = "Time: " + Mathf.Round(endLevelTime * 100.0f) * 0.01f;
 
@@ -34,15 +36,16 @@ public class LevelTimer : MonoBehaviour
         {
             timerEnd();
         }
+        
+        global.levelTime = startTime - endLevelTime; 
     }
 
 
     public void timerEnd()
     {
 
-        time = Time.deltaTime; 
-
-        global.levelTime = time; 
+  
+        
         SceneManager.LoadScene("YouDied");
         DestroyImmediate(this);
     }
