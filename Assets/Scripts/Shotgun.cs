@@ -10,7 +10,7 @@ public class Shotgun : MonoBehaviour
     public float fireDelta = 0.5F;
     private float fireDelay = 0.5F;
     private float sinceFire = 0.0F;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class Shotgun : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+{
         sinceFire += Time.deltaTime;
         if (Input.GetButton("Fire1") && sinceFire > fireDelay)
         {

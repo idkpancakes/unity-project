@@ -127,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("PickupItem") == true)
         {
             pickupCount++;
+            globalScript.totalPebbles = pickupCount; 
             scoreText.text = "Score: " + pickupCount;
             Destroy(other.gameObject);
             return;
@@ -138,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
             fishText.text = "Fish: " + fishCount;
 
             globalScript.fishCount = fishCount;
+            globalScript.totalFish = fishCount; 
 
             Destroy(other.gameObject);
             Debug.Log(fishCount);
@@ -185,5 +187,4 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return false;
-    }
 }

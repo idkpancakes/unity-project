@@ -7,7 +7,13 @@ using TMPro;
 
 public class GlobalScript : MonoBehaviour
 {
-    public int lvlCounter = 0;
+ 
+    public int lvlCounter = 0; 
+
+    public int fishCount = 0; 
+
+    public int totalPebbles = 0; 
+    public int totalFish = 0; 
 
     public int fishCount = 0;
 
