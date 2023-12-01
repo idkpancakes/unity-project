@@ -2242,7 +2242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4917f22680afe054294269f61cc90f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endLevelTime: 600
+  endLevelTime: 180
   time: 0
   timerT: {fileID: 1755645470}
 --- !u!4 &168264255
