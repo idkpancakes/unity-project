@@ -5383,8 +5383,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 429629927}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressPause
         m_Mode: 1
         m_Arguments:

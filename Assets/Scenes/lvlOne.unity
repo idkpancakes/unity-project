@@ -10012,8 +10012,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 1093227734}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressPause
         m_Mode: 1
         m_Arguments:
@@ -15595,6 +15595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelTime: 600
+  time: 0
   timerT: {fileID: 448344939}
 --- !u!114 &1093227733
 MonoBehaviour:
