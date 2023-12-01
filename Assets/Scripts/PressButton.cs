@@ -24,6 +24,7 @@ public class PressButton : MonoBehaviour
 
     public void pressPlay() {
         globalScript.lvlCounter++; 
+       
         SceneManager.LoadScene("lvlOne"); 
     }
 
@@ -36,6 +37,12 @@ public class PressButton : MonoBehaviour
     }
 
     public void pressReturn() {
+        globalScript.lvlCounter = 0; 
+        globalScript.totalFish = 0; 
+        globalScript.fishCount = 0; 
+        globalScript.levelPebbles = 0; 
+        globalScript.totalPebbles = 0; 
+        
         SceneManager.LoadScene("Menu"); 
     }
 
@@ -58,16 +65,29 @@ public class PressButton : MonoBehaviour
 
     public void nextLevel() {
         int levelCount = globalScript.lvlCounter; 
+        globalScript.levelPebbles = 0; 
+             globalScript.fishCount = 0; 
 
-       if(levelCount ==1 ){
-        SceneManager.LoadScene("lvlTwo"); 
+       if(levelCount == 1 ){
+        
+        globalScript.lvlCounter++; 
+        SceneManager.LoadScene("LevelTwo"); 
+       
+      
        } else if (levelCount == 2) {
-        SceneManager.LoadScene("lvlThree"); 
+        
+        globalScript.lvlCounter++; 
+        SceneManager.LoadScene("LevelThree");
+
        } else if(levelCount == 3) {
-         SceneManager.LoadScene("lvelFour"); 
+         SceneManager.LoadScene("LevelFour"); 
+
        } else if (levelCount == 4) {
+
         SceneManager.LoadScene("Win"); 
        }
+
+
 
 
     }

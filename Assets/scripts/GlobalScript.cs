@@ -12,10 +12,14 @@ public class GlobalScript : MonoBehaviour
 
     public int fishCount = 0; 
 
+    public int levelPebbles = 0; 
+
+    public float levelTime = 0f; 
+
     public int totalPebbles = 0; 
     public int totalFish = 0; 
 
-    public int fishCount = 0;
+ 
 
 
     // Start is called before the first frame update

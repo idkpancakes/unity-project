@@ -9,6 +9,10 @@ TagManager:
   - PickupItem
   - Fish
   - Platform
+  - Ground
+  - trap
+  - fish
+  - Flag
   layers:
   - Default
   - TransparentFX

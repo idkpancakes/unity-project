@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScoreMenu : MonoBehaviour
@@ -12,6 +13,10 @@ public class ScoreMenu : MonoBehaviour
     [SerializeField] GameObject fishTwo; 
     
     [SerializeField] GameObject fishThree; 
+
+    [SerializeField] TextMeshProUGUI timeTaken; 
+
+    [SerializeField] TextMeshProUGUI pebblesCollected; 
 
     
     
@@ -42,6 +47,11 @@ public class ScoreMenu : MonoBehaviour
             fishThree.SetActive(true); 
 
         }
+
+
+        pebblesCollected.text = global.levelPebbles + ""; 
+
+        timeTaken.text = global.levelTime + ""; 
     }
 
     // Update is called once per frame

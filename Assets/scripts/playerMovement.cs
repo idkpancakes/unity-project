@@ -127,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("PickupItem") == true)
         {
             pickupCount++;
-            globalScript.totalPebbles = pickupCount; 
+            globalScript.totalPebbles = pickupCount;
             scoreText.text = "Score: " + pickupCount;
             Destroy(other.gameObject);
             return;
@@ -139,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
             fishText.text = "Fish: " + fishCount;
 
             globalScript.fishCount = fishCount;
-            globalScript.totalFish = fishCount; 
+            globalScript.totalFish = fishCount;
 
             Destroy(other.gameObject);
             Debug.Log(fishCount);
@@ -147,9 +147,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-
-        // ...and got a little worried! -- get downs so gooooood
-        Debug.Log(pickupCount);
+        if (other.gameObject.CompareTag("Flag") == true)
+        {
+            SceneManager.LoadScene("Transition");
+            return;
+        }
     }
 
     private bool IsGrounded()
@@ -187,4 +189,5 @@ public class PlayerMovement : MonoBehaviour
         }
 
         return false;
+    }
 }

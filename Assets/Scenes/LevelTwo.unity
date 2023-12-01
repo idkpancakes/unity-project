@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 2295774054093998191, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 135e2a4908613eb4689620fa6ad4c97f, type: 2}
+      objectReference: {fileID: 2100000, guid: 930ac00c66be6044b9685e5cdb0ef5dd, type: 2}
     - target: {fileID: 4214318156506121439, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.44
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799969167}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
         m_MethodName: pressContinue
         m_Mode: 1
@@ -1420,7 +1420,7 @@ PrefabInstance:
     - target: {fileID: 2295774054093998191, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 135e2a4908613eb4689620fa6ad4c97f, type: 2}
+      objectReference: {fileID: 2100000, guid: 930ac00c66be6044b9685e5cdb0ef5dd, type: 2}
     - target: {fileID: 4214318156506121439, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 22
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799969167}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
         m_MethodName: pressPause
         m_Mode: 1
@@ -2234,7 +2234,7 @@ GameObject:
   - component: {fileID: 799969170}
   - component: {fileID: 799969169}
   - component: {fileID: 799969168}
-  - component: {fileID: 799969167}
+  - component: {fileID: 799969171}
   m_Layer: 0
   m_Name: scriptHolder
   m_TagString: Untagged
@@ -2242,21 +2242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &799969167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799969166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27209bf8a7cdc934b97df448023377d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1233320144}
-  pauseButton: {fileID: 646470233}
-  lvlCount: {fileID: 0}
 --- !u!114 &799969168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,6 +2294,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799969171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799969166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e3902d660033a419953bbbd11dcd34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1233320144}
+  pauseButton: {fileID: 646470233}
+  globalScript: {fileID: 0}
 --- !u!1 &843876118
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799969167}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
         m_MethodName: pressReturn
         m_Mode: 1
@@ -4206,7 +4206,7 @@ PrefabInstance:
     - target: {fileID: 2295774054093998191, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 135e2a4908613eb4689620fa6ad4c97f, type: 2}
+      objectReference: {fileID: 2100000, guid: 930ac00c66be6044b9685e5cdb0ef5dd, type: 2}
     - target: {fileID: 4214318156506121439, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -4973,7 +4973,7 @@ PrefabInstance:
     - target: {fileID: 6917295690663923095, guid: ac251a3f9108f4d5c9ef855652610479, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 135e2a4908613eb4689620fa6ad4c97f, type: 2}
+      objectReference: {fileID: 2100000, guid: 930ac00c66be6044b9685e5cdb0ef5dd, type: 2}
     - target: {fileID: 8168918612641053376, guid: ac251a3f9108f4d5c9ef855652610479, type: 3}
       propertyPath: speed
       value: 0.5
@@ -5098,7 +5098,7 @@ PrefabInstance:
     - target: {fileID: 2295774054093998191, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 135e2a4908613eb4689620fa6ad4c97f, type: 2}
+      objectReference: {fileID: 2100000, guid: 930ac00c66be6044b9685e5cdb0ef5dd, type: 2}
     - target: {fileID: 4214318156506121439, guid: 139f1873b3db04845a9a1cbba70e6d6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 5

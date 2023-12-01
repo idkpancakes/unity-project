@@ -25,6 +25,8 @@ public class LevelTimer : MonoBehaviour
     {
         endLevelTime -= Time.deltaTime;
 
+        global.levelTime = Time.deltaTime; 
+
         timerT.text = "Time: " + Mathf.Round(endLevelTime * 100.0f) * 0.01f;
 
         if (endLevelTime <= 0.0f)
