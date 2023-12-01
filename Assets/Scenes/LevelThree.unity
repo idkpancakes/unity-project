@@ -4563,6 +4563,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6749763
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5483717
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0017566681
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.05803126
+      objectReference: {fileID: 0}
     - target: {fileID: 4717847937141558426, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -7956,7 +7972,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1151249217}
-  - component: {fileID: 1151249218}
   m_Layer: 0
   m_Name: Saw1
   m_TagString: Untagged
@@ -7982,18 +7997,6 @@ Transform:
   - {fileID: 1956349075}
   m_Father: {fileID: 1978059383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1151249218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151249216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55cf1c790874af44832a37505adb678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1156152920
 GameObject:
   m_ObjectHideFlags: 0
@@ -8945,6 +8948,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4498787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8860205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.039274216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0017566085
+      objectReference: {fileID: 0}
     - target: {fileID: 4717847937141558426, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -9070,6 +9089,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4498711
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4545803
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.039274216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.007622719
+      objectReference: {fileID: 0}
     - target: {fileID: 4717847937141558426, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -9100,7 +9135,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1342295265}
-  - component: {fileID: 1342295266}
   m_Layer: 0
   m_Name: Saw3
   m_TagString: Untagged
@@ -9126,18 +9160,6 @@ Transform:
   - {fileID: 1756648844}
   m_Father: {fileID: 1978059383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1342295266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342295264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55cf1c790874af44832a37505adb678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1348774233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9923,7 +9945,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1626384465}
-  - component: {fileID: 1626384466}
   m_Layer: 0
   m_Name: Saw4
   m_TagString: Untagged
@@ -9949,18 +9970,6 @@ Transform:
   - {fileID: 299403837}
   m_Father: {fileID: 1978059383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1626384466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1626384464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55cf1c790874af44832a37505adb678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1637546339
 GameObject:
   m_ObjectHideFlags: 0
@@ -10197,7 +10206,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658021447}
-  - component: {fileID: 1658021448}
   m_Layer: 0
   m_Name: Saw2
   m_TagString: Untagged
@@ -10223,18 +10231,6 @@ Transform:
   - {fileID: 1143148060}
   m_Father: {fileID: 1978059383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1658021448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658021446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55cf1c790874af44832a37505adb678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1659727706
 GameObject:
   m_ObjectHideFlags: 0
@@ -12821,6 +12817,22 @@ PrefabInstance:
     - target: {fileID: 4717847937141558423, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
       propertyPath: m_Name
       value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4815686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6577829
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.046465516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4717847937141558424, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06804532
       objectReference: {fileID: 0}
     - target: {fileID: 4717847937141558426, guid: f90495b4bbdd18b47a4ea4f308f5dfaa, type: 3}
       propertyPath: waypoints.Array.data[0]
