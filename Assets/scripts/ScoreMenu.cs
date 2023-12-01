@@ -51,7 +51,9 @@ public class ScoreMenu : MonoBehaviour
 
         pebblesCollected.text = global.levelPebbles + ""; 
 
-        timeTaken.text = global.levelTime + ""; 
+       
+
+        timeTaken.text = Mathf.Round(global.levelTime * 100.0f) * 0.01f + "";  
     }
 
     // Update is called once per frame
