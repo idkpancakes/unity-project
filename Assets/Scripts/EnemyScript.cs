@@ -31,7 +31,7 @@ public class EnemyScript : MonoBehaviour
         Debug.Log("leftBound " + leftBound.x);
         Debug.Log("rightBound " + rightBound.x);
         
-        targetDir = Vector2.left;
+        targetDir = (Random.value > 0.5f) Vector2.left;
     }
 
     // Update is called once per frame
