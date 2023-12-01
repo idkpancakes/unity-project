@@ -127,7 +127,9 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("PickupItem") == true)
         {
             pickupCount++;
-            globalScript.totalPebbles = pickupCount;
+            globalScript.totalPebbles++;
+
+            globalScript.levelPebbles = pickupCount; 
             scoreText.text = "Score: " + pickupCount;
             Destroy(other.gameObject);
             return;

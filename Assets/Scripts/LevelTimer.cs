@@ -9,6 +9,7 @@ public class LevelTimer : MonoBehaviour
     private GlobalScript global;
 
     public float endLevelTime;
+     public float time; 
 
     [SerializeField] TextMeshProUGUI timerT;
 
@@ -25,7 +26,7 @@ public class LevelTimer : MonoBehaviour
     {
         endLevelTime -= Time.deltaTime;
 
-        global.levelTime = Time.deltaTime; 
+        
 
         timerT.text = "Time: " + Mathf.Round(endLevelTime * 100.0f) * 0.01f;
 
@@ -38,6 +39,10 @@ public class LevelTimer : MonoBehaviour
 
     public void timerEnd()
     {
+
+        time = Time.deltaTime; 
+
+        global.levelTime = time; 
         SceneManager.LoadScene("YouDied");
         DestroyImmediate(this);
     }
