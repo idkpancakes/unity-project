@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Collider2D ground;
 
-    private float moveSpeed = 2.5f;
+    private float moveSpeed = 3.5f;
 
     private Vector2 leftBound;
     private Vector2 rightBound;
@@ -30,8 +30,9 @@ public class EnemyScript : MonoBehaviour
 
         // Debug.Log("leftBound " + leftBound.x);
         // Debug.Log("rightBound " + rightBound.x);
-        
-        targetDir = UnityEngine.Random.value > 0.5f ? Vector2.left : Vector2.right;
+     
+        targetDir = Vector2.left;
+        // targetDir = UnityEngine.Random.value > 0.5f ? Vector2.left : Vector2.right;
     }
 
     // Update is called once per frame
