@@ -28,10 +28,10 @@ public class EnemyScript : MonoBehaviour
         rightBound = (Vector2)gBound.center + (Vector2)gBound.extents;
         leftBound = new Vector2(rightBound.x - gBound.size.x, rightBound.y);
 
-        Debug.Log("leftBound " + leftBound.x);
-        Debug.Log("rightBound " + rightBound.x);
+        // Debug.Log("leftBound " + leftBound.x);
+        // Debug.Log("rightBound " + rightBound.x);
         
-        targetDir = (Random.value > 0.5f) Vector2.left;
+        targetDir = UnityEngine.Random.value > 0.5f ? Vector2.left : Vector2.right;
     }
 
     // Update is called once per frame
