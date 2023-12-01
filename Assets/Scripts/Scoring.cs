@@ -20,7 +20,7 @@ public class Scoring : MonoBehaviour
 
         pebbleSoreText.text =  global.totalPebbles + ""; 
         fishScoreText.text =  global.totalFish + ""; 
-        levelCounterText.text = "You reached level " + global.lvlCounter; 
+        levelCounterText.text = "You reached level " + global.lvlCounter + 1; 
 
     }
 

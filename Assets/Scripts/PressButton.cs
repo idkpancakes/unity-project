@@ -23,6 +23,7 @@ public class PressButton : MonoBehaviour
     }
 
     public void pressPlay() {
+     
         globalScript.lvlCounter++; 
        
         SceneManager.LoadScene("lvlOne"); 
