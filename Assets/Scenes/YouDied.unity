@@ -1368,7 +1368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pebbleSoreText: {fileID: 858649717}
   fishScoreText: {fileID: 985012846}
-  levelCounterText: {fileID: 0}
+  levelCounterText: {fileID: 1904051151}
   global: {fileID: 0}
 --- !u!1 &1362314873
 GameObject:

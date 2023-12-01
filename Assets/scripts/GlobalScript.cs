@@ -14,7 +14,7 @@ public class GlobalScript : MonoBehaviour
 
     public int levelPebbles = 0; 
 
-    public float levelTime = 0f; 
+    public float levelTime = 0.0f; 
 
     public int totalPebbles = 0; 
     public int totalFish = 0; 
