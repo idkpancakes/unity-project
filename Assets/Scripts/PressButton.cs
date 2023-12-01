@@ -24,7 +24,7 @@ public class PressButton : MonoBehaviour
 
     public void pressPlay() {
      
-        globalScript.lvlCounter++; 
+     
        
         SceneManager.LoadScene("lvlOne"); 
     }
@@ -65,22 +65,24 @@ public class PressButton : MonoBehaviour
     }
 
     public void nextLevel() {
+      
         int levelCount = globalScript.lvlCounter; 
         globalScript.levelPebbles = 0; 
              globalScript.fishCount = 0; 
+             
 
        if(levelCount == 1 ){
-        
-        globalScript.lvlCounter++; 
+       
         SceneManager.LoadScene("LevelTwo"); 
        
       
        } else if (levelCount == 2) {
         
-        globalScript.lvlCounter++; 
+      
         SceneManager.LoadScene("LevelThree");
 
        } else if(levelCount == 3) {
+       
          SceneManager.LoadScene("LevelFour"); 
 
        } else if (levelCount == 4) {
