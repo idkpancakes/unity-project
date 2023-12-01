@@ -389,8 +389,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 275474766}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 520063813}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressReturn
         m_Mode: 1
         m_Arguments:
@@ -1035,6 +1035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 520063811}
   - component: {fileID: 520063812}
+  - component: {fileID: 520063813}
   m_Layer: 0
   m_Name: scriptHolder
   m_TagString: Untagged
@@ -1080,6 +1081,21 @@ MonoBehaviour:
     vertical: 720
   - horizontal: 854
     vertical: 480
+--- !u!114 &520063813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520063809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e3902d660033a419953bbbd11dcd34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  pauseButton: {fileID: 0}
+  lvlCount: {fileID: 0}
 --- !u!1 &739279530
 GameObject:
   m_ObjectHideFlags: 0

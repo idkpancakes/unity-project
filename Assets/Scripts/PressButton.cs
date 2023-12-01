@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PressMenuButtons : MonoBehaviour
+public class PressButton : MonoBehaviour
 {
-
+    
     [SerializeField] private GameObject pauseMenu; 
     [SerializeField] private GameObject pauseButton; 
-    public GlobalScript lvlCount; 
+    public GlobalScript globalScript; 
     // Start is called before the first frame update
     void Start()
     {
-        lvlCount = FindObjectOfType<GlobalScript>(); 
+        globalScript = FindObjectOfType<GlobalScript>(); 
         pauseMenu.SetActive(false); 
     }
 
@@ -24,7 +23,7 @@ public class PressMenuButtons : MonoBehaviour
     }
 
     public void pressPlay() {
-        lvlCount.lvlCounter++; 
+        globalScript.lvlCounter++; 
         SceneManager.LoadScene("lvlOne"); 
     }
 
@@ -55,5 +54,21 @@ public class PressMenuButtons : MonoBehaviour
         Time.timeScale = 1.0f; 
         pauseMenu.SetActive(false); 
         pauseButton.SetActive(true); 
+    }
+
+    public void nextLevel() {
+        int levelCount = globalScript.lvlCounter; 
+
+       if(levelCount ==1 ){
+        SceneManager.LoadScene("lvlTwo"); 
+       } else if (levelCount == 2) {
+        SceneManager.LoadScene("lvlThree"); 
+       } else if(levelCount == 3) {
+         SceneManager.LoadScene("lvelFour"); 
+       } else if (levelCount == 4) {
+        SceneManager.LoadScene("Win"); 
+       }
+
+
     }
 }

@@ -12,6 +12,9 @@ public class GlobalScript : MonoBehaviour
 
     public int fishCount = 0; 
 
+    public int totalPebbles = 0; 
+    public int totalFish = 0; 
+
 
 
 

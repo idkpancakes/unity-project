@@ -207,8 +207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 193704999}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 428607897}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressQuit
         m_Mode: 1
         m_Arguments:
@@ -639,7 +639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428607896}
-  - component: {fileID: 428607895}
+  - component: {fileID: 428607897}
   m_Layer: 0
   m_Name: scriptHolder
   m_TagString: Untagged
@@ -647,20 +647,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &428607895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428607894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e502ff5352dbf43b0a4b8beade5fb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvlCounter: 0
-  fishCount: 0
 --- !u!4 &428607896
 Transform:
   m_ObjectHideFlags: 0
@@ -676,6 +662,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428607897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428607894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e3902d660033a419953bbbd11dcd34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  pauseButton: {fileID: 0}
+  lvlCount: {fileID: 0}
 --- !u!1 &529044266
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,8 +895,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698324037}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 428607897}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressRules
         m_Mode: 1
         m_Arguments:
@@ -1230,8 +1231,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1247815956}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 428607897}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressPlay
         m_Mode: 1
         m_Arguments:
@@ -1377,8 +1378,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1361489634}
-        m_TargetAssemblyTypeName: pressMenuButtons, Assembly-CSharp
+      - m_Target: {fileID: 428607897}
+        m_TargetAssemblyTypeName: PressButton, Assembly-CSharp
         m_MethodName: pressSettings
         m_Mode: 1
         m_Arguments:
