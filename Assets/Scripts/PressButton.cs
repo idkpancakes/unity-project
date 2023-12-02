@@ -43,6 +43,8 @@ public class PressButton : MonoBehaviour
         globalScript.fishCount = 0; 
         globalScript.levelPebbles = 0; 
         globalScript.totalPebbles = 0; 
+
+        Destroy(globalScript); 
         
         SceneManager.LoadScene("Menu"); 
     }
