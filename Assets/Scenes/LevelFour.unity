@@ -3064,8 +3064,8 @@ Transform:
   m_GameObject: {fileID: 236793509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.349054, y: -1.7367797, z: 9.650238}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 19.325, y: -2.4266, z: 8.13}
+  m_LocalScale: {x: 1.5649201, y: 1.395387, z: 1.3041}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1628809364}
@@ -5269,7 +5269,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.7618694
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19290,7 +19290,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.35, y: 1.7448, z: 5}
-  m_LocalScale: {x: 1.3030894, y: 1.0990161, z: 1}
+  m_LocalScale: {x: 1.3552129, y: 1.0990161, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 236793510}
@@ -24080,11 +24080,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8b58941804988a045af3e206107017f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2054
+      value: -2.65
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8b58941804988a045af3e206107017f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8b58941804988a045af3e206107017f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24292,8 +24292,8 @@ MonoBehaviour:
   rb: {fileID: 2003949270}
   horizontalSpeed: 30
   verticalSpeed: 10
-  scoreText: {fileID: 0}
-  fishText: {fileID: 0}
+  scoreText: {fileID: 281730036}
+  fishText: {fileID: 611087556}
   friction: 0.5
   walking: {fileID: 1008198279}
   pickupSound: {fileID: 1981413094}
