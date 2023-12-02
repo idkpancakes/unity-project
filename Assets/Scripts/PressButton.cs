@@ -78,6 +78,7 @@ public class PressButton : MonoBehaviour
 
         if (levelCount == 1)
         {
+            // SceneManager.LoadScene("LevelFour");
             SceneManager.LoadScene("LevelTwo");
         }
         else if (levelCount == 2)
