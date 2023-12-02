@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 CameraOffsetVector2 = new Vector2(3.5f, 2.5f);
     public AudioSource walking;
+    public AudioSource pickupSound;
 
 
     // Start is called before the first frame update
@@ -122,13 +123,13 @@ public class PlayerMovement : MonoBehaviour
 
         _animator.SetBool("Walking", horizontal != 0 && grounded);
 
-        if (_animator.GetBool("Walking") && grounded)
+        if (horizontal != 0 && grounded && walking.isPlaying == false)
         {
             walking.Play();
         }
-        else
+        else if (walking.isPlaying == true)
         {
-            walking.Stop();
+            walking.Pause();
         }
     }
 
@@ -143,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
             globalScript.levelPebbles = pickupCount;
             scoreText.text = "Score: " + pickupCount;
             Destroy(other.gameObject);
+            pickupSound.Play();
             return;
         }
 
@@ -156,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
 
             Destroy(other.gameObject);
             Debug.Log(fishCount);
+            pickupSound.Play();
 
             return;
         }
