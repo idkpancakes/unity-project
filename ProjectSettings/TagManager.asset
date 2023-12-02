@@ -10,8 +10,6 @@ TagManager:
   - Fish
   - Platform
   - Ground
-  - trap
-  - fish
   - Flag
   layers:
   - Default
