@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -3978301086101379932}
   - component: {fileID: 6691000784662891615}
   - component: {fileID: 2216126033212626903}
+  - component: {fileID: 4858777915495259944}
   m_Layer: 0
   m_Name: EnemyPrefab
   m_TagString: Untagged
@@ -340,3 +341,15 @@ PolygonCollider2D:
       - {x: 1.8648998, y: 2.1397145}
       - {x: 1.9739804, y: 2.3104324}
   m_UseDelaunayMesh: 0
+--- !u!114 &4858777915495259944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244212756106901957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a55cf1c790874af44832a37505adb678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
