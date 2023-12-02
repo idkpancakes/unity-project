@@ -15,13 +15,15 @@ public class EnemyScript : MonoBehaviour
     private Vector2 rightBound;
     private Vector2 targetDir;
 
+    private SpriteRenderer _spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
-        var gBound = ground.bounds;
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
+        var gBound = ground.bounds;
 
         // needs to take into account the offsets
 
@@ -30,7 +32,7 @@ public class EnemyScript : MonoBehaviour
 
         // Debug.Log("leftBound " + leftBound.x);
         // Debug.Log("rightBound " + rightBound.x);
-     
+
         targetDir = Vector2.left;
         // targetDir = UnityEngine.Random.value > 0.5f ? Vector2.left : Vector2.right;
     }
@@ -39,16 +41,18 @@ public class EnemyScript : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 rbPos = rb.position;
-        
-        if(rb.position.x < leftBound.x) {
+
+        if (rb.position.x - (_spriteRenderer.bounds.size.x / 2) < leftBound.x)
+        {
             targetDir = Vector2.right;
         }
-        else if (rb.position.x > rightBound.x) {
+        else if (rb.position.x + (_spriteRenderer.bounds.size.x / 2) > rightBound.x)
+        {
             targetDir = Vector2.left;
         }
 
         rb.velocity = targetDir * moveSpeed;
-    
+
         // Debug.DrawLine(leftBound, leftBound + Vector2.up, Color.green, 0.5f);
         // Debug.DrawLine(rightBound, rightBound + Vector2.up, Color.green, 0.5f);
     }
